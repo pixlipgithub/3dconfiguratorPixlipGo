@@ -1,0 +1,30 @@
+{
+  "name": "fabric",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/main.js",
+  "repository": "",
+  "license": "MIT",
+  "keywords": [
+    "jquery",
+    "three.js",
+    "es6"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "build-uglify": "rollup -c && uglifyjs build/standgenerator.js --compress --mangle --output build/standgenerator.min.js",
+    "start": "npm run dev"
+  },
+  "dependencies": {
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^6.1.0",
+    "three-orbit-controls": "^82.1.0"
+  },
+  "devDependencies": {
+    "rollup": "^1.32.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "three": "^0.113.2",
+    "uglifyjs": "^2.4.11"
+  }
+}
